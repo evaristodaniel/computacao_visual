@@ -117,10 +117,9 @@ while(1):
                     cv2.putText(frame,'0 = Navegador',(0,50), font, 2, (0,0,255), 3, cv2.LINE_AA)
                     #os.system("start Chrome.exe --window-size=800,600")
                     # Comando para abrir o Chrome no macOS com uma janela personalizada
-                    #os.system("osascript -e 'tell application \"Google Chrome\" to make new window with properties {bounds:{100, 100, 900, 700}}'")
-
+                    os.system("osascript -e 'tell application \"Google Chrome\" to make new window with properties {bounds:{100, 100, 900, 700}}'")
                     executado = True
-                    #break
+                    break
                     
                     
                 
@@ -132,8 +131,8 @@ while(1):
                 else:
                     cv2.putText(frame,'1 = Calculadora',(0,50), font, 2, (0,0,255), 3, cv2.LINE_AA)
                     #os.system("start WINWORD.EXE --window-size=600,400")
-            #        os.system("open -a Calculator")
-            #        break
+                    os.system("open -a Calculator")
+                    break
                     
         elif l==2:
             cv2.putText(frame,'2 = Mail',(0,50), font, 2, (0,0,255), 3, cv2.LINE_AA)
